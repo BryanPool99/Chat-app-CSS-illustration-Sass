@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+/*Para los textos*/
+/*Gradientes*/
+/*Secundarios*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: hsl(270deg, 20%, 96%);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  max-height: 936px;
+}
+
+.col-l {
+  background: linear-gradient(hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  width: 12rem;
+  height: 28rem;
+  border-bottom-right-radius: 100%;
+}
+
+.phone {
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 18rem;
+  margin: auto;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 2rem;
+  position: relative;
+  bottom: 23rem;
+}
+.phone .blok-white {
+  margin: auto;
+  width: 9rem;
+  height: 1.6rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  position: relative;
+  left: 0.4rem;
+  z-index: 2;
+}
+.phone .p-header {
+  background: linear-gradient(90deg, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
+  width: 100%;
+  height: 5rem;
+  color: hsl(0deg, 0%, 100%);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.phone .p-header i {
+  margin: 0.5rem;
+}
+.phone .p-header img {
+  border-radius: 100%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  width: 2rem;
+}
+.phone .p-header .profile {
+  margin: 0 2rem 0 1rem;
+}
+.phone .p-header .profile p {
+  font-weight: 700;
+}
+.phone .p-header .profile span {
+  color: hsl(206deg, 6%, 79%);
+  font-size: small;
+  font-weight: 400;
+}
+.phone .p-main {
+  border-radius: 0.5rem;
+  position: relative;
+  top: -1.5rem;
+  background-color: hsl(270deg, 20%, 96%);
+  font-size: 12px;
+  width: 100%;
+  height: 28rem;
+}
+.phone .p-main .box-l { /*temporal*/
+  margin: 1rem 0 0 0.5rem;
+  border-radius: 0.7rem;
+  width: 11rem;
+}
+.phone .p-main .box-l p {
+  color: hsl(276deg, 55%, 52%);
+}
+.phone .p-main .box-dog {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0.4rem 0 0;
+}
+.phone .p-main .box-dog img {
+  width: 3rem;
+  border-radius: 1rem;
+  margin: 0.1rem;
+}
+.phone .p-main .box-r1 {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 0.5rem 0.5rem 1rem 5rem;
+}
+.phone .p-main .box-r1 p {
+  color: hsl(271deg, 15%, 43%);
+}
+.phone .p-main .box-r2 {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 0.5rem 0.5rem 1rem 9rem;
+}
+.phone .p-main .box-r2 p {
+  color: hsl(271deg, 15%, 43%);
+  text-align: right;
+}
+.phone .p-main .box-lf { /*temporal*/
+  margin: 1rem 0 0 0.5rem;
+  border-radius: 0.7rem;
+  width: 10.4rem;
+  background-color: hsl(270deg, 20%, 96%);
+}
+.phone .p-main .box-lf p {
+  color: hsl(276deg, 55%, 52%);
+}
+.phone .p-main .box-l-m {
+  background: linear-gradient(-90deg, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
+  border-radius: 1rem;
+  width: 12rem;
+  height: 2rem;
+  margin: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.phone .p-main .box-l-m i {
+  color: hsl(289deg, 100%, 72%);
+  margin: 0 1rem;
+}
+.phone .p-main .box-l-m p {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 400;
+  font-size: smaller;
+  width: 7rem;
+}
+.phone .p-main .box-l-m span {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: larger;
+}
+.phone .p-main .p-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone .p-main .p-footer input {
+  height: 2rem;
+  border: none;
+  width: 90%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5re;
+}
+.phone .p-main .p-footer input::-moz-placeholder {
+  color: hsl(206deg, 6%, 79%);
+  font-size: smaller;
+}
+.phone .p-main .p-footer input:-ms-input-placeholder {
+  color: hsl(206deg, 6%, 79%);
+  font-size: smaller;
+}
+.phone .p-main .p-footer input::placeholder {
+  color: hsl(206deg, 6%, 79%);
+  font-size: smaller;
+}
+.phone .p-main .p-footer i {
+  position: relative;
+  right: 1rem;
+  color: hsl(271deg, 36%, 24%);
+  font-size: larger;
+  cursor: pointer;
+}
+
+.info {
+  position: relative;
+  bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info .tittle {
+  font-weight: 700;
+  font-size: xx-large;
+  color: hsl(271deg, 36%, 24%);
+  margin: 0 0 2rem 0;
+}
+.info .description {
+  text-align: center;
+  width: 19rem;
+  color: hsl(270deg, 7%, 64%);
+  line-height: 1.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer footer .attribution a:hover {
+  color: hsl(229deg, 45%, 74%);
+  background-color: hsl(229deg, 45%, 74%);
+}
+
+/*PARA PC*/
+@media screen and (min-width: 900px) {
+  .container {
+    max-height: 800px;
+  }
+  .col-l {
+    width: 30rem;
+    height: 45rem;
+    border-bottom-right-radius: 15rem;
+    border-bottom-left-radius: 15rem;
+  }
+  .phone {
+    bottom: 37rem;
+    right: 10rem;
+  }
+  .info {
+    bottom: 60rem;
+    left: 15rem;
+  }
+  .info .description {
+    text-align: left;
+    margin: 0 0 0 4rem;
+    width: 28rem;
+  }
+}/*# sourceMappingURL=estilos.css.map */

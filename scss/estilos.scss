@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+/*Para los textos*/
+$Pale-Violet: hsl(276, 100%, 81%);
+$Moderate-Violet: hsl(276, 55%, 52%);
+$Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+$Grayish-Blue: hsl(206, 6%, 79%);
+$Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+$Dark-Grayish-Violet: hsl(270, 7%, 64%);
+/*Gradientes*/
+$Light-Magenta: hsl(293, 100%, 63%);
+$Light-Violet: hsl(264, 100%, 61%);
+/*Secundarios*/
+$White: hsl(0, 0%, 100%);
+$Light-GrayishViolet: hsl(270, 20%, 96%);
+$Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+$Very-Light-Magenta: hsl(289, 100%, 72%);
+$font-family: "Rubik", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: $Light-GrayishViolet;
+  font-family: $font-family;
+  font-size: 16px;
+  max-height: 936px;
+}
+.col-l {
+  background: linear-gradient($Light-Magenta, $Light-Violet);
+  width: 12rem;
+  height: 28rem;
+  border-bottom-right-radius: 100%;
+}
+.phone {
+  background-color: $White;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 18rem;
+  margin: auto;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 2rem;
+  position: relative;
+  bottom: 23rem;
+  .blok-white {
+    margin: auto;
+    width: 9rem;
+    height: 1.6rem;
+    background-color: $White;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+    left: 0.4rem;
+    z-index: 2;
+  }
+  .p-header {
+    background: linear-gradient(90deg, $Light-Violet, $Light-Magenta);
+    width: 100%;
+    height: 5rem;
+    color: $White;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 1.5rem;
+    padding-top: 1.5rem;
+    i {
+      margin: 0.5rem;
+    }
+    img {
+      border-radius: 100%;
+      border: 1px solid $White;
+      width: 2rem;
+    }
+    .profile {
+      margin: 0 2rem 0 1rem;
+      p {
+        font-weight: 700;
+      }
+      span {
+        color: $Grayish-Blue;
+        font-size: small;
+        font-weight: 400;
+      }
+    }
+  }
+  .p-main {
+    border-radius: 0.5rem;
+    position: relative;
+    top: -1.5rem;
+    background-color: $Light-GrayishViolet;
+    font-size: 12px;
+    width: 100%;
+    height: 28rem;
+    .box-l {/*temporal*/
+      margin: 1rem 0 0 0.5rem;
+      border-radius: 0.7rem;
+      width: 11rem;
+      p {
+        color: $Moderate-Violet;
+      }
+    }
+    .box-dog {
+      display: flex;
+      justify-content: flex-end;
+      margin: 1rem 0.4rem 0 0;
+      img {
+        width: 3rem;
+        border-radius: 1rem;
+        margin: 0.1rem;
+      }
+    }
+    .box-r1 {
+      background-color: $White;
+      border-radius: 1rem;
+      padding: 0.2rem;
+      margin: 0.5rem 0.5rem 1rem 5rem;
+      p {
+        color: $Desaturated-Dark-Violet;
+      }
+    }
+    .box-r2 {
+      background-color: $White;
+      border-radius: 1rem;
+      padding: 0.2rem;
+      margin: 0.5rem 0.5rem 1rem 9rem;
+      p {
+        color: $Desaturated-Dark-Violet;
+        text-align: right;
+      }
+    }
+    .box-lf {/*temporal*/
+      margin: 1rem 0 0 0.5rem;
+      border-radius: 0.7rem;
+      width: 10.4rem;
+      background-color: $Light-GrayishViolet;
+      p {
+        color: $Moderate-Violet;
+      }
+    }
+    .box-l-m{
+        background: linear-gradient(-90deg, $Light-Violet, $Light-Magenta);
+        border-radius: 1rem;
+        width: 12rem;
+        height: 2rem;
+        margin: 1rem 0.5rem;
+        display: flex;
+        align-items: center;
+        i{
+            color:$Very-Light-Magenta;
+            margin: 0 1rem;
+        }
+        p{
+            color: $White;
+            font-weight: 400;
+            font-size: smaller;
+            width: 7rem;
+        }
+        span{
+          color: $White;
+          font-weight: 700;
+          font-size: larger;
+        }
+    }
+    .p-footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input{
+        height: 2rem;
+        border: none;
+        width: 90%;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 0.5re;
+      }
+      input::placeholder{
+        color:$Grayish-Blue;
+        font-size: smaller;
+      }
+      i{
+        position: relative;
+        right: 1rem;
+        color: $Very-Dark-Desaturated-Violet;
+        font-size: larger;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.info{
+  position: relative;
+  bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .tittle{
+    font-weight: 700;
+    font-size: xx-large;
+    color: $Very-Dark-Desaturated-Violet;
+    margin: 0 0 2rem 0;
+  }
+  .description{
+    text-align: center;
+    width: 19rem;
+    color: $Dark-Grayish-Violet;
+    line-height: 1.5rem;
+  }
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  footer .attribution {
+  
+    font-size: 11px;
+    text-align: center;
+    a:hover {
+      color: hsl(229, 45%, 74%);
+      background-color: hsl(229, 45%, 74%);
+    }
+  }
+}
+
+/*PARA PC*/
+@media screen and (min-width: 900px) {
+  .container {
+    max-height: 800px;
+  }
+  .col-l {
+    width: 30rem;
+    height: 45rem;
+    border-bottom-right-radius:15rem;
+    border-bottom-left-radius: 15rem;
+  }
+  .phone{
+    bottom: 37rem;
+    right: 10rem;
+  }
+  .info{
+    bottom: 60rem;
+    left: 15rem;
+    .description{
+      text-align: left;
+      margin: 0 0 0 4rem;
+      width: 28rem;
+    }
+  }
+}
